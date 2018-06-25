@@ -21,7 +21,7 @@ while ($row = mysqli_fetch_assoc($result)){
         }
         unset($_GET['ident'][$tmp_position]);
         unset($_GET['value'][$tmp_position]);
-        unset($_GET['value'][$tmp_position]);
+        unset($_GET['version'][$tmp_position]);
     }
     else
     {
