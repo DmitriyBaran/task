@@ -25,7 +25,10 @@ while ($row = mysqli_fetch_assoc($result)){
     }
     else
     {
-        $new[$row['ident']] = array();
+        $new[$row['ident']] = array(
+                                'value' => $row['value'], 
+						       'version'=> $row['version'],
+        );
     }
 }
 $delete = array();
