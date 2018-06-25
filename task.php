@@ -17,7 +17,7 @@ while ($row = mysqli_fetch_assoc($result)){
         $tmp_position = array_search($row['ident'],$_GET['ident']);
         if($row['version'] > $_GET['version'][$tmp_position])
         {
-            $update[$row['ident']] = array('value'= $row['version'],
+            $update[$row['ident']] = array('version'= $row['version'],
 					  'value' => $row['value'],
 					  );
         }
